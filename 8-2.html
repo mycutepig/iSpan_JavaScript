@@ -42,6 +42,17 @@
         console.log(name3);
         listOfName.unshift(name3);
         console.log(listOfName);
+
+        // .splice(start => <index>, remove amounts, add <value>...)
+        listOfName.splice(0, 0, "Alixe");
+        console.log(listOfName)
+
+        // .splice(start => listOfName[1], 
+        //         remove 2 valus => listOfName[1, 2], 
+        //         add "Bill", "Cook")
+        let arrRemoveValue = listOfName.splice(1, 2, "Bill", "Cook");
+        console.log(arrRemoveValue);
+        console.log(listOfName);
     </script>
 </head>
 

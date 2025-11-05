@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr = [9, 5, 2, 7];
+
+        // 由小到大
+        arr.sort(function (a, b) {
+            return a - b;
+        });
+        console.log(arr);
+
+        // 由大到小
+        arr.sort(function (a, b) {
+            return b - a;
+        });
+        console.log(arr);
+
+        // .sort()
+        let arr2 = [20, 5, 9, 10];
+
+        arr2.sort();
+        console.log(arr2);
+        // return [10, 20, 5, 9]
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
