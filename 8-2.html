@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let listOfName = ['Alex', 'Bill', 'Cook', 'Darren'];
+
+        listOfName[4] = "Ellen";
+        console.log(listOfName);
+
+        // add value to the end of array
+        listOfName.push("Fox", "Gina");
+        console.log(listOfName);
+
+        listOfName[0] = "Allen";
+        listOfName[2] = "Carl";
+        console.log(listOfName);
+
+        // remove value from the end of array
+        listOfName.pop();
+        console.log(listOfName);
+
+        // store the removed value into variable
+        let name = listOfName.pop();
+        console.log(`${name} is removed`);
+        console.log(listOfName);
+
+        // remove value from the start of array
+        listOfName.shift();
+        console.log(listOfName);
+
+        // store the removed value into variable
+        let name2 = listOfName.shift();
+        console.log(name2);
+        console.log(listOfName);
+
+        // move the last value to the start of array
+        let name3 = listOfName.pop();
+        console.log(name3);
+        listOfName.unshift(name3);
+        console.log(listOfName);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let obj = {
+            fname: 'Darren',
+            lname: 'Yang',
+            age: null,
+            lineId: 'telunyang'
+        };
+
+        for (let key in obj) {
+            console.log(key, obj[key]);
+        }
+
+        // get all keys from object into array
+        console.log(Object.keys(obj));
+        // get all values from object into array
+        console.log(Object.values(obj));
+        // get all [key, value] from object into array
+        console.log(Object.entries(obj));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
