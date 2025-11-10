@@ -23,6 +23,27 @@
 
         console.log(person1.getAge());
         console.log(person2.getAge());
+
+        class Person02 {
+            constructor(name, gender, age) {
+                this.name = name;
+                this.gender = gender;
+                this.age = age;
+            }
+
+            getAge() {
+                return this.age;
+            }
+        }
+
+        let person3 = new Person02("Alice", "女", 22);
+        let person4 = new Person02("Bill", "男", 18);
+
+        console.log(person3.name);
+        console.log(person4.name);
+
+        console.log(person3.getAge());
+        console.log(person4.getAge());
     </script>
 </head>
 
